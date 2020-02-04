@@ -1,7 +1,8 @@
 <template>
   <div>
+    products
     <input type="text" v-model="id" />
-    <button @click="goTo">Load user</button>
+    <nuxt-link :to="`${$route.name}/${id}`">Go to product</nuxt-link>
   </div>
 </template>
 
@@ -11,11 +12,6 @@ export default {
     return {
       id: ""
     };
-  },
-  methods: {
-    goTo() {
-      this.$router.push("/users/" + this.id);
-    }
   }
 };
 </script>

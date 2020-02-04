@@ -1,11 +1,10 @@
 <template>
-  <div class="container">
-    <nuxt-link to="/users">users</nuxt-link>
+  <div>
+    main page
+    <nuxt-link to="/products">Products</nuxt-link>
   </div>
 </template>
 
 <script>
 export default {};
 </script>
-
-<style></style>
