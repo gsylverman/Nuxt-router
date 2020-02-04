@@ -1,13 +1,23 @@
 <template>
   <div>
+    <app-header></app-header>
     <nuxt />
   </div>
 </template>
 
+<script>
+import Header from "~/components/SomeComp";
+export default {
+  components: {
+    appHeader: Header
+  }
+};
+</script>
+
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
