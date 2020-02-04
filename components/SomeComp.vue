@@ -15,7 +15,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .header {
   background: lightblue;
   width: 100%;
